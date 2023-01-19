@@ -4,14 +4,9 @@
 	font-family: 'Josefin Sans', sans-serif;
 	box-sizing: border-box;
 	overflow-x: hidden;
+	font-size:62.5%;
 }
 
-html{
-	font-size:62.5%;
-	overflow-x: hidden;
-	
-	
-}
 
 .hero{
 	height: 100vh;
