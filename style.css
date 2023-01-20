@@ -1,4 +1,4 @@
-{
+  *{
 	padding: 0;
 	margin: 0;
 	font-family: 'Josefin Sans', sans-serif;
@@ -246,20 +246,21 @@ h5{
 	font-weight: bold;
 	margin-bottom: 25px;
 }
-.contact-me .button-two{
+.contact-me .a{
 	background-color:#f9004d;
 	color: white;
 	text-decoration: none;
 	border: 2px solid transparent;
 	font-weight: bold;
-	padding: 13px 30px;
+	padding: 23px 30px;
 	border-radius: 30px;
 	transition: .4s;
 }
-.contact-me .button-two:hover{
+.contact-me .a:hover{
 	background-color: transparent;
 	border: 2px solid #f9004d;
 	cursor: pointer;
+
 }
 footer{
 	position: relative;
@@ -283,6 +284,8 @@ footer p:nth-child(2){
 	width: 500px;
 	text-align: center;
 	line-height: 26px;
+	bottom: 35px;
+	font-size: 14px;
 }
 .social{
 	display: flex;
@@ -311,7 +314,7 @@ footer p:nth-child(2){
 	bottom: 35px;
 	font-size: 14px;
 }
-@media(max width:1028px) {
+@media(max-width:1028px) {
 	.ritu-image{
 		position:static;
 		transform: rotate(0);
