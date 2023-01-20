@@ -54,8 +54,7 @@ nav ul li a:hover{
 }.Ritu{
 	padding-left:1rem;
 }
-.btn{
-	background-color:#f9004d;
+.btn{  background-color:#f9004d;
 	color: white;
 	text-decoration: none;
 	border:0.2rem solid transparent;
