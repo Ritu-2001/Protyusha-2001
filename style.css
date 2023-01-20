@@ -44,6 +44,9 @@ nav ul li a{
 	text-decoration: none;
 	font-weight: bold;
 	text-transform: capitalize;
+	font-size:15px;
+	padding: 10px 25px;
+	
 }
 nav ul li a:hover{
 	color: #f9004d;
@@ -57,9 +60,10 @@ nav ul li a:hover{
 	text-decoration: none;
 	border:0.2rem solid transparent;
 	font-weight: bold;
-	padding: 1rem 25rem;
-	border-radius: 3rem;
+	padding: 10px 25px
+	border-radius: 30px;
 	transition: transform .4s;
+	font-size:10px;
 }
 .btn:hover{
 	transform: scale(1.2);
@@ -103,7 +107,7 @@ h4{
 	display: inline-block;
 	outline: none;
 	border: none;
-	padding: 1rem 3rem;
+	padding:0.67rem 3rem;
 	border-radius: 3rem;
 	background-color:#f9004d;
 	color: white;
@@ -246,7 +250,7 @@ h5{
 	font-weight: bold;
 	margin-bottom: 25px;
 }
-.contact-me .button-two{
+.contact-me .resume{
 	background-color:#f9004d;
 	color: white;
 	text-decoration: none;
@@ -256,7 +260,7 @@ h5{
 	border-radius: 30px;
 	transition: .4s;
 }
-.contact-me .button-two:hover {
+.contact-me .resume:hover {
 	background-color: transparent;
 	border: 2px solid #f9004d;
 	cursor: pointer;
