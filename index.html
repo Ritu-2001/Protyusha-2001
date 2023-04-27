@@ -5,8 +5,9 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 
+	<!-- bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <!---google-font---->
 <link href="https://fonts.googleapis.com/css2?family=Hurricane&display=swap" rel="stylesheet">
@@ -15,16 +16,16 @@
 	<!----hero Section start---->
 
 	<div class="hero">
-		<nav>
+		<nav id="navbar">
 			<h2 class="logo">Portfolio</h2>
 			<ul>
 				<li><a href="hero">Home</a></li>
-				<li><a href="service">education</a>
+				<li><a href="#about">About</a>
 		<!---		<li><a href="about">Services</a></li>---->
-				<li><a href="service">Skills</a></li>
-				<li><a href="social">Contact me</a></li>
+				<li><a href="#skill">Skills</a></li>
+				<li><a href="#footer">Contact me</a></li>
 			</ul>
-			<a href="#" class="btn">medineering</a>
+			<a href="#" class="button">medineering</a>
 		</nav>
 
 		<div class="content">
@@ -41,7 +42,7 @@
 	</div>
 
 	<!----About section start---->
-	<section class="about">
+	<section id="about">
 		<div class="main">
 <img class="ritu-image" src="image/main.jpg[1].png" alt="me">
 			<div class="about-text">
@@ -62,26 +63,47 @@
 		</div>
 
 		<div class="box">
-			<div class="card">
+			<div class="card1" id="skill">
 				<i class="fas fa-bars"></i>
-				<h5>Skill</h5>
-				<div class="pra">
-				<!--	<p>Every website should be built with two primary goals: Firstly, it needs to work across all devices. Secondly, it needs to be fast as possible.</p>--->
+				<h5  style="color: white;
+				font-size: 23px;
+				margin-bottom: 15px;">Skill</h5>
+	
+				 <div class="pra"> 
+				
+					
+						
+					<div class="skill">
 
-<p>
-	CSS,Html,Javascript,Front end web development.
-	Backend-javascript,Node js,express js,MongoDB.
-</p>
+					 <div class="bar learning" data-skill="React"></div>
+					<div class="bar back basic" data-skill="javascript"></div>
+					<div class="bar back intermediate" data-skill="C"></div>
+					<div class="bar front advanced" data-skill="CSS"></div>
+					<div class="bar front expert" data-skill="HTML"></div>
+				
+				  </div> 
+				  
+				  
+
+
+
+
+
+				<!-- end of /.coloumn -->
+
+			
 
 					<p style="text-align: center;">
-						<a class="button" href="#">Read More</a>
+						<!-- <a class="button" href="#">Read More</a> -->
 					</p>
 				</div>
 			</div>
 
-			<div class="card">
+			<div class="card" id="skill1">
 				<i class="far fa-user"></i>
-				<h5>Education</h5>
+				<h5  style="color: white;
+				font-size: 23px;
+				margin-bottom: 15px;">Education</h5>
 				<div class="pra">
 					<p>Graduaction:Coochbehar GOVT Engineering College(2020-2024)</p>
  <p>
@@ -90,34 +112,156 @@
 		10th:Dihibagnan KB Roy High School
 	</p>
 
-					<p style="text-align: center;">
-						<a class="button" href="#">Read More</a>
-					</p>
+					
 				</div>
 			</div>
 
-			<div class="card">
-				<i class="far fa-bell"></i>
-				<h5>Web Development</h5>
-				<div class="pra">
-					<p>Every website should be built with two primary goals: Firstly, it needs to work across all devices. Secondly, it needs to be fast as possible.</p>
-
-					<p style="text-align: center;">
-						<a class="button" href="#">Read More</a>
-					</p>
+			
 				</div>
 			</div>
 		</div>
 	</div>
 
+	<!-- work -->
+	<div id="work">
+    <h1 class="work">Project </h1>
+	<section class="articles">
+		<article>
+		  <div class="article-wrapper" style="background-color: rgba(171, 170, 170, 0.901);">
+			<figure>
+			  <img src="image/incredible.png" alt="" />
+			</figure>
+			<div class="article-body">
+			  <h1>This is some title</h1>
+			  <h2>
+				Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet, congue bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet egestas.
+			  </h2>
+			  <a href="#" class="read-more">
+				Read more <span class="sr-only">about this is some title</span>
+				<svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+				  <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+				</svg>
+			  </a>
+			</div>
+		  </div>
+		</article>
+		<article>
+	  
+		  <div class="article-wrapper" style="background-color: rgba(171, 170, 170, 0.901);">
+			<figure>
+			  <img src="image/DiceGame.png" alt="" />
+			</figure>
+			<div class="article-body">
+			  <h1>This is some title</h1>
+			  <h2>
+				Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet, congue bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet egestas.
+			  </h2>
+			  <a href="#" class="read-more">
+				Read more <span class="sr-only">about this is some title</span>
+				 <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+				  <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+				</svg> 
+			  </a>
+			</div>
+		  </div>
+		</article>
+		<article>
+	  
+		  <div class="article-wrapper" style="background-color: rgba(171, 170, 170, 0.901);">
+			<figure>
+			  <img src="image/Tindog.png" alt="" />
+			</figure>
+			<div class="article-body">
+			  <h1 style="padding-top: 5px;">This is some title</h1>
+			  <h2>
+				Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet, congue bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet egestas.
+			  </h2>
+			  <a href="#" class="read-more">
+				Read more <span class="sr-only">about this is some title</span>
+				 <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+				  <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+				</svg> 
+			  </a>
+			</div>
+		  </div>
+		</article>
+		<article>
+	  
+			<div class="article-wrapper" style="background-color: rgba(171, 170, 170, 0.901);">
+			  <figure>
+				<img src="image/Tindog.png" alt="" />
+			  </figure>
+			  <div class="article-body">
+				<h1 style="padding-top: 5px;">This is some title</h1>
+				<h2>
+				  Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet, congue bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet egestas.
+				</h2>
+				<a href="#" class="read-more">
+				  Read more <span class="sr-only">about this is some title</span>
+				   <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+					<path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+				  </svg> 
+				</a>
+			  </div>
+			</div>
+		  </article>
+<article>
+	  
+			<div class="article-wrapper" style="background-color: rgba(171, 170, 170, 0.901);">
+			  <figure>
+				<img src="image/Tindog.png" alt="" />
+			  </figure>
+			  <div class="article-body">
+				<h1 style="padding-top: 5px;">This is some title</h1>
+				<h2>
+				  Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet, congue bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet egestas.
+				</h2>
+				<a href="#" class="read-more">
+				  Read more <span class="sr-only">about this is some title</span>
+				   <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+					<path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+				  </svg> 
+				</a>
+			  </div>		  
+			</div>
+		  </article>
+		  <article>
+	  
+			<div class="article-wrapper" style="background-color: rgba(171, 170, 170, 0.901);">
+			  <figure>
+				<img src="image/Tindog.png" alt="" />
+			  </figure>
+			  <div class="article-body">
+				<h1 style="padding-top: 5px;">This is some title</h1>
+				<h2>
+				  Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet, congue bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet egestas.
+				</h2>
+				<a href="#" class="read-more">
+				  Read more <span class="sr-only">about this is some title</span>
+				   <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+					<path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+				  </svg> 
+				</a>
+			  </div>		  
+			</div>
+		  </article>
+	  </section>
+	</div>
+
+
+	
+
 	<!------Contact Me------>
-	<div class="contact-me">
+	<div id="contact-me">
 		<p>Let Me Get You A Beautiful Website.</p>
 		<button class="resume"><a href="https://drive.google.com/file/d/1YVZ62-8UalH7FaR81EAPMo311257m7mI/view?usp=share_link"></a>Hire Me</button>
 	</div>
+	<script> (function($){
+		new WOW().init();
+	})(jQuery);</script>
 
 	<!------footer start--------->
-	<footer>
+	<footer id="footer">
 		<p>Contact Me</p>
 		<p>If you want to keep contact with me connect with me</p>
 		<div class="social">
@@ -128,5 +272,6 @@
 		</div>
 		<p class="end">©2022 @Protyusha Ghosh</p>
 	</footer>
+	
 </body>
 </html>
